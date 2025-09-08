@@ -72,6 +72,11 @@ section {
     @apply grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-0;
   }
 
+   .grid-3-cols-md-notsotight {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-4;
+  }
+
+
   .grid-4-cols {
     @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-7;
   }

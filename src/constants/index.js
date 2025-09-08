@@ -6,8 +6,8 @@ export const words = [
     {text:'a junior IT worker',imgPath:'images/it.png'}
 ]
 
-const counterItems=[
+export const counterItems = [
   {value: 4,suffix:"+", label:'years of experience'},
-  {value: 50,suffix:"+", label:'hours of tutorials'},
-  {value: 128,suffix:"+", label:'Blender deformations'}
+  {value: 1500,suffix:"+", label:'hours of disastrous tutorials'},
+  {value: 128,suffix:"+", label:'Blender anomalies'}
 ]
