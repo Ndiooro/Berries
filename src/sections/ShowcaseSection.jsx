@@ -4,7 +4,7 @@ import { useGSAP } from '@gsap/react';
 import {gsap} from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-gsap.registerPlugin();
+gsap.registerPlugin(ScrollTrigger);
 
 const ShowcaseSection = () => {
     const sectionRef= useRef(null);
@@ -14,9 +14,16 @@ const ShowcaseSection = () => {
 
     
     useGSAP(() => {
-        const projects=[project1Ref.current, project2Ref.current, project3Ref.current];
 
-    projects.forEach((card, index) => {
+       gsap.fromTo(
+      sectionRef.current,
+      { opacity: 0 },
+      { opacity: 1, duration: 1.5 }
+    );
+
+        const cards=[project1Ref.current, project2Ref.current, project3Ref.current];
+
+    cards.forEach((card, index) => {
         gsap.fromTo(
             card,
             {

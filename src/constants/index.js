@@ -11,3 +11,12 @@ export const counterItems = [
   {value: 1500,suffix:"+", label:'hours of disastrous tutorials'},
   {value: 128,suffix:"+", label:'Blender anomalies'}
 ]
+
+const navLinks = [
+  {name:'Work', link:'#work'},
+  {name:'Experience', link:'#experience'},
+  {name:'Skills', link:'#skills'},
+  {name:'Testimonials', link:'#testimonials'},
+]
+
+export {navLinks}
